@@ -1,7 +1,7 @@
 
 defmodule Pig_latin do
   def is_vowel(c) do
-    case Enum.member?([~c"a", ~c"A", ~c"e", ~c"i", ~c"o", ~c"u"], c) do 
+    case Enum.member?([~c"a", ~c"e", ~c"i", ~c"o", ~c"u"], c) do 
       :ok -> true
       :error -> false
       _ -> false

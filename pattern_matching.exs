@@ -6,3 +6,14 @@ case divide(10, 2) do
   {:ok, result} -> IO.puts("Success: #{result}")
   {:error, reason} -> IO.puts("Error: #{reason}")
 end
+
+
+###
+
+def greet(name) do
+  case name do
+    "" -> IO.puts("Hello!")
+    nil -> IO.puts("Hello stranger!")
+    name -> IO.puts("Hello #{name}")
+  end
+end

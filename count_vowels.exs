@@ -9,4 +9,4 @@ defmodule MyModule do
   end
 end
 
-MyModule.countVowels("abbacus")
+MyModule.count_vowels("abbacus")

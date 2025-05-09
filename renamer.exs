@@ -1,12 +1,10 @@
-# find all files in folder
+defmodule Renamer do
+  @extensions ["jpg", "bmp", "webp", "jxl", "jpeg", "png"]
+  @files ["file.jpg", "file.bmp", "file.webp", "file.jxl", "file.jpeg", "file.png"]
+  def process() do
+    Enum.map(@files, fn file -> String.ends_with?(file, @extensions) end)
+  end
+end
 
-# find all images in folder
-
-# create random new string as filename
-
-
-
-extensions = ["jpg", "bmp", "webp", "jxl", "jpeg", "png"]
-files = ["file.jpg", "file.bmp", "file.webp", "file.jxl", "file.jpeg", "file.png"]
-
-Enum.map(files, fn f -> String.ends_with?(f, extensions) end)
+x = Renamer.process()
+IO.puts("#{inspect x}")

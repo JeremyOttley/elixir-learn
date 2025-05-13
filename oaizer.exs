@@ -1,9 +1,10 @@
 isbn = "978-1-4780-2737-9"
 
 defmodule ISBN do
-  
+  defp prefix(), do: "A"
+  defp suffix(), do: "E"
   def process_isbn(isbn) do
-    "A" <> String.slice(String.replace(isbn, ~r/-/, ""), 8..11) <> "E"
+    prefix() <> String.slice(String.replace(isbn, ~r/-/, ""), 8..11) <> suffix()
   end
   
   

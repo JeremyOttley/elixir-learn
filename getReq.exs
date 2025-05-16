@@ -4,6 +4,6 @@ Mix.install([
   {:req, "~> 0.5.0"}
   ])
 
-Req.get!("https://character.totalpartykill.ca/basic/json/")
+Req.get!("https://jsonplaceholder.typicode.com/users")
 |> Map.get(:body)
 |> IO.puts()

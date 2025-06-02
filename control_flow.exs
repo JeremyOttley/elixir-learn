@@ -1,4 +1,5 @@
-# You use if with one condition and a possible else, that's it. You use the cond statement when you have more than one condition and an if statement isn't enough, by the end, the case statement is used when you want to pattern match some data.
+# You use if with one condition and a possible else, that's it. 
+# You use the cond statement when you have more than one condition and an if statement isn't enough, by the end, the case statement is used when you want to pattern match some data.
 
 # Let's explain by examples: suppose you want to eat apple if today is raining or rice if not, then you could use:
 
